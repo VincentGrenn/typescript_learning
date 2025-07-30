@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "watch": true,
+        "lib": ["DOM", "ESNext"],
+        "outDir": "./dir"
+    },
+    "include": ["src/**/*"]
+}

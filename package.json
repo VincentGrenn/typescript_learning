@@ -1,0 +1,12 @@
+{
+  "name": "typescript_learning",
+  "version": "1.0.0",
+  "description": "learning typescript",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "ts-node ./dir/index.js",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC"
+}
