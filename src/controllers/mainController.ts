@@ -9,7 +9,7 @@ export function ServeFile(req: http.IncomingMessage, res: http.ServerResponse) {
 
     if (FilePath === "") FilePath = "index.html";
 
-    const File = import.meta.dirname.replace("/dist", "") + "/public/" + FilePath;
+    const File = import.meta.dirname.replace("/dist/controllers", "") + "/public/" + FilePath;
 
     fs.readFile(File, (err, content) => {
         if (err) {
