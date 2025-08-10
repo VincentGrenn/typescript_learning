@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/mime-types": "^3.0.1",
     "@types/node": "^24.2.1",
+    "mime-types": "^3.0.1",
     "typescript": "^5.9.2"
   }
 }
