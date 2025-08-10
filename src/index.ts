@@ -6,8 +6,7 @@ import mimetypes from "mime-types";
 const PORT = 5000;
 
 const Server = http.createServer((req, res) => {
-    console.log(`METHOD: ${req.method}`);
-    console.log(`URL: ${req.url}`);
+    console.log(`${req.method} ${req.url}`);
     if (req.url.match("/") && req.method === "GET") {
         const ParsedURL = url.parse(req.url, true);
         let FilePath = ParsedURL.path.replace(/^\/+|\/+$/g, "");
@@ -22,7 +21,6 @@ const Server = http.createServer((req, res) => {
                 res.end();
             } else {
                 res.setHeader("X-Content-Type-Options", "nosniff");
-                console.log(`Now serving ${FilePath}!`);
                 const MIME = mimetypes.lookup(FilePath);
                 res.writeHead(200, {"Content-Type": (MIME as string)});
                 res.end(content);
