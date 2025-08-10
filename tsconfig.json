@@ -1,9 +1,12 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "watch": true,
-        "lib": ["DOM", "ESNext"],
-        "outDir": "./dir"
+        "module": "node16",
+        "moduleResolution": "node16",
+        "target": "es2020",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        
     },
     "include": ["src/**/*"]
 }
