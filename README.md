@@ -1,2 +1,2 @@
 # typescript_learning
-learning typescript
+for experiments using typescript & associated technologies
